@@ -1,13 +1,13 @@
 import pyxel
 
 COLORS = {
-    "B": 1,
-    "K": 0,
-    "O": 2,
-    "R": 8,
-    "T": 6,
-    "W": 7,
-    "Y": 10,
+    "B": 5,  # Blue
+    "K": 0,  # Black
+    "O": 15,  # Orange
+    "R": 8,  # Red
+    "T": 9,  # Brown
+    "W": 7,  # White
+    "Y": 10,  # Yellow
 }
 
 PIXELS = [
