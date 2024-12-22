@@ -42,7 +42,7 @@ for y, row in enumerate(PIXELS):
         color = COLORS.get(pixel, 0)  # Default color is black
         pyxel.pset(x, y, color)
 
-# Alternativ 1
+# Alternative 1
 # for y in range(len(PIXELS)):
 #    row = PIXELS[y]
 #    for x in range(len(row)):
@@ -50,7 +50,7 @@ for y, row in enumerate(PIXELS):
 #        color = COLORS.get(pixel, 0)  # Default color is black
 #        pyxel.pset(x, y, color)
 
-# Alternativ 2
+# Alternative 2
 # y = 0  # Initial y-coordinate
 # for row in PIXELS:
 #    x = 0  # Initial x-coordinate for each row
