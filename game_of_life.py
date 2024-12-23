@@ -1,6 +1,8 @@
 import pyxel
 from copy import deepcopy
 
+# https://gist.github.com/fabiommendes/6f9a1932af0a9796f7d26048d0f7f97c
+
 LARGURA = 80
 ALTURA = 60
 

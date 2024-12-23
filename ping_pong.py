@@ -1,6 +1,8 @@
-# https://web.archive.org/web/20190318014833/https://blog.vomkonstant.in/2019/01/21/pythons-most-underrated-game-engine-for-beginners/
 import math
 import pyxel
+
+# https://gist.github.com/BjoernSchilberg/8ff84ffe932c499043c08120c8b3a6ff
+# https://web.archive.org/web/20190318014833/https://blog.vomkonstant.in/2019/01/21/pythons-most-underrated-game-engine-for-beginners/
 
 BALL_SIZE = 2
 BALL_SPEED = 2
@@ -115,4 +117,3 @@ class App:
 
 
 App()
-

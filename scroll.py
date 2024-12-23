@@ -3,6 +3,8 @@ import random
 
 import pyxel
 
+# https://gist.github.com/greg76/6a7e06a2c30564eccf7a320c54e189a4
+
 
 class Intro:
     def __init__(self):

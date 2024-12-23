@@ -1,3 +1,6 @@
+# Pyxel
+
+
 
 # #Links
 https://note.com/pro_gramma
@@ -12,3 +15,5 @@ pyxel edit initiation.pyxres &
 
 pyxel watch . initiation.py
 
+
+https://www.pyxelstudio.net/

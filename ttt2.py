@@ -1,7 +1,7 @@
 import sys
 import pyxel
+# https://gist.github.com/timbledum/36f3c1162d396b044ee3474a4ee6b9f6
 
-# https://github.com/kitao/pyxel for information about the pyxel game library
 
 # Window
 WIDTH = 150

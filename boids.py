@@ -7,6 +7,7 @@ Some resources I'd recommend if you wanted to learn more about boids:
 * http://www.red3d.com/cwr/boids/
 
 This is my quick excercise to make a simplified, 2d, retro inspiried implementation.
+https://gist.github.com/greg76/dc8295a314c9d08119a44e96639011bd
 """
 
 import pyxel
@@ -34,12 +35,10 @@ class Boid:
         self.direction = pyxel.rndi(-180, 180)
 
     def draw(self) -> None:
-        pyxel.line(self.x, self.y, self.old_x, self.old_y,
-                   pyxel.COLOR_DARK_BLUE)
+        pyxel.line(self.x, self.y, self.old_x, self.old_y, pyxel.COLOR_DARK_BLUE)
         pyxel.pset(self.x, self.y, pyxel.COLOR_WHITE)
 
     def update(self, neighbours: "Boid" = None) -> None:
-
         if neighbours:
             # coherence/cohesion - steer towards center of mass
 
@@ -53,7 +52,7 @@ class Boid:
             too_close = [
                 (self.x - other.x, self.y - other.y)
                 for other in neighbours
-                if self.dist_sq(other) <= AVOID ** 2
+                if self.dist_sq(other) <= AVOID**2
             ]
 
             if len(too_close) > 0:
@@ -94,7 +93,7 @@ class Boid:
         self.y = self.old_y - VELOCITY * pyxel.cos(self.direction)
 
     def dist_sq(self, other: "Boid"):
-        return (self.x - other.x)**2 + (self.y - other.y)**2
+        return (self.x - other.x) ** 2 + (self.y - other.y) ** 2
 
 
 class App:
@@ -105,11 +104,7 @@ class App:
 
     def update(self) -> None:
         for boid in self.boids:
-            pack = [
-                other
-                for other in self.boids
-                if boid.dist_sq(other) <= SIGHT ** 2
-            ]
+            pack = [other for other in self.boids if boid.dist_sq(other) <= SIGHT**2]
             boid.update(pack)
 
     def draw(self) -> None:

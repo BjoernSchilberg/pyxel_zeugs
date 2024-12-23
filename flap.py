@@ -1,6 +1,6 @@
-# https://gist.github.com/fabiommendes/06dc57956320bf8d8fb33ee9ff33d3e4
 import pyxel
 from random import randint
+# https://gist.github.com/fabiommendes/06dc57956320bf8d8fb33ee9ff33d3e4
 
 # Declara variáveis globais
 
